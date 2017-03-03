@@ -4,8 +4,8 @@ const app = express()
 
 const getRoutes = require('./app/routes')
 
-const urlDB = 'mongodb://localhost:27017/todo_tasks'
-const PORT = 3000
+const urlDB = process.env.DB_URI || 'mongodb://localhost:27017/todo_tasks'
+const PORT = process.env.PORT || 3000
 
 mongoose.Promise = global.Promise
 mongoose.connect(urlDB)
