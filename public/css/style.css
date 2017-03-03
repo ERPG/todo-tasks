@@ -1,0 +1,78 @@
+header {
+    background: #e7e7e7;
+}
+
+header nav {
+    border-radius: 0;
+}
+
+#form-new-task {
+    margin-bottom: 40px;
+}
+
+#form-new-task input,
+#form-new-task button {
+    border-radius: 0;
+}
+
+#form-new-task input {
+    min-width: 400px;
+}
+
+.list-tasks li {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.list-tasks li .done,
+.list-tasks li .delete {
+    font-size: 12px;
+    padding: 3px 8px;
+}
+
+.list-tasks li div {
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    font-weight: 600;
+}
+
+.list-tasks li p:last-child {
+    text-align: right;
+    font-size: 13px;
+}
+
+.list-tasks span {
+    display: inline-block;
+}
+
+.list-tasks span::first-letter {
+    text-transform: uppercase;
+}
+
+.list-task-done li p:last-child,
+.list-task-done li span {
+    text-decoration: line-through;
+}
+
+#username-nav:first-letter {
+    text-transform: uppercase;
+}
+
+#username-nav {
+    color: #9c2492;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#username-nav:hover {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    #form-new-task input {
+        min-width: auto;
+    }
+}

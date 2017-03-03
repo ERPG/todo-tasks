@@ -1,0 +1,33 @@
+{
+  "name": "todo-tasks-mongoose-pug",
+  "version": "1.0.0",
+  "description": "To-do tasks list",
+  "main": "index.js",
+  "engines": {
+    "node": "6.10.0"
+  },
+  "scripts": {
+    "prestart": "npm install && bower install",
+    "dev": "nodemon index",
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "Francisco López Muñoz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-session": "^1.15.1",
+    "moment": "^2.17.1",
+    "mongoose": "^4.8.5",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

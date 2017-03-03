@@ -1,0 +1,22 @@
+{
+  "name": "todo-tasks-mongoose-pug",
+  "description": "To-do tasks list",
+  "main": "index.js",
+  "authors": [
+    "Francisco López Muñoz"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/FransLopez/mongodb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

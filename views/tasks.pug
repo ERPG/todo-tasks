@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+  .alert.alert-warning.hidden
+    button.close(type='button', data-dismiss='alert', aria-hidden='true') &times; 
+    strong Task deleted
+
+  form#form-new-task.form-inline(action='/tasks/', method='POST', role='form')
+    .form-group
+      input.form-control(type='text', name='title', placeholder='Type your new task...', autofocus)  
+    button.btn.btn-primary.form-control(type='submit') Add
+  
+  if tasks.length !== 0
+    ul.list-group.list-tasks
+      each task, index in tasks
+          li.list-group-item
+            a.btn.btn-success.done(href='/task/'+task.id) Done
+            div
+              p.edit-title
+                | #{index+1}. 
+                span=task.title
+              input.edit.hidden(type='text', name="title", data-id="/task/"+task.id, value=''+task.title)
+              p Created at: #{moment(task.createdAt).format('YYYY/MM/DD HH:mm')}
+            |  
+            a.btn.btn-danger.delete(href='/task/'+task.id) Delete
+  else
+    p.info(ng-show='tasks.length === 0') No tasks.
