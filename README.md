@@ -10,7 +10,7 @@
 To start the server you can just do
 
 ```
-npm start
+npm start && bower install
 ```
 
 This will server static files under `public` folder and will listen to several endopoint to allow clients interact w/ the data
