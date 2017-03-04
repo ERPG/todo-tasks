@@ -6,7 +6,7 @@ const LocalStrategy = require('passport-local')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
 
-const Account = require('../models/Account')
+const Account = require('../../../models/Account')
 
 Router
   .use(cookieParser())
